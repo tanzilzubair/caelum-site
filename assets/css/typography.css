@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'GT Cinetype';
+    src: url('../fonts/GT-Cinetype-Bold.woff') format('woff'),
+        url('../fonts/GT-Cinetype-Bold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'GT Cinetype';
+    src: url('../fonts/GT-Cinetype-Regular.woff') format('woff'),
+        url('../fonts/GT-Cinetype-Regular.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'GT Cinetype';
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+button {
+    font-size: 12px;
+}
+
+nav button {
+    font-size: 16px;
+}
+
+.language-toggle {
+    font-size: 12px;
+}
+
+.introduction p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.point,
+.email,
+.links {
+    font-size: 16px;
+}
+
+@media (min-width: 1025px) {
+    body {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    section {
+        font-size: 12px;
+    }
+
+    .section-header {
+        font-size: 14px;
+    }
+    .section-header .number {
+        font-weight: bold;
+    }
+
+    #third .introduction p,
+    #fifth .introduction p {
+        font-size: 28px;
+    }
+
+    .point-header {
+        font-size: 24px;
+    }
+
+    .email {
+        font-size: 24px;
+    }
+
+    .links {
+        font-size: 20px;
+    }
+
+    .point-number,
+    .point-title {
+        font-size: 24px;
+    }
+
+    .point-content li {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
