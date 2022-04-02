@@ -18,6 +18,11 @@
         margin: auto;
     }
 
+    .logo img {
+        height: 100%;
+        width: 100%;
+    }
+
     nav {
         display: none;
     }
@@ -27,7 +32,6 @@
         top: 0;
         left: 0;
         width: 80px;
-        /* height: calc(100% - 150px); */
         height: 100%;
         cursor: pointer;
     }
@@ -36,37 +40,16 @@
         display: none;
     }
 
-    .language-toggle {
+    .home-button {
         position: absolute;
-        bottom: 35px;
-        left: 46px;
+        bottom: 15px;
+        left: 23.5px;
         display: block;
-        transform-origin: left bottom;
-        transform: rotate(270deg);
         z-index: 3;
     }
 
-    .language-toggle a {
-        opacity: 0.7;
+    .home-button a {
         position: relative;
-        padding: 10px;
-        margin: -10px;
-        margin-right: 27px;
-    }
-
-    .language-toggle a.is-active {
-        opacity: 1;
-    }
-
-    .language-toggle a.is-active:after {
-        background-color: #ffffff;
-        border-radius: 6px;
-        content: '';
-        position: absolute;
-        right: 0px;
-        top: 50%;
-        padding: 3px;
-        margin: -3px;
     }
 
     main {
@@ -97,15 +80,19 @@
     #first {
         left: calc(80px * 1);
     }
+
     #second {
         left: calc(80px * 2);
     }
+
     #third {
         left: calc(80px * 3);
     }
+
     #fourth {
         left: calc(80px * 4);
     }
+
     #fifth {
         left: calc(80px * 5);
     }
@@ -177,7 +164,7 @@
     }
 
     section .introduction {
-        padding: 315px 55px 75px;
+        padding: 55% 55px 75px;
     }
 
     section .section-body {
@@ -187,20 +174,10 @@
         flex-grow: 1;
     }
 
-    section .static-image-container {
-        flex: 1;
-    }
-
-    section .static-image-container svg {
-        width: 50%;
-        margin: 275px auto 0;
-        display: block;
-    }
-
     section .section-body-copy {
         border-left: 1px solid #ffffff;
         flex: 2;
-        padding: 100px 55px;
+        padding: 80px 55px;
         min-height: 100%;
     }
 
@@ -209,6 +186,7 @@
         display: flex;
         border-bottom: 1px solid #fff;
     }
+
     section .point-number {
         width: 25%;
         padding: 45px 0;
@@ -216,23 +194,28 @@
         flex-shrink: 0;
         border-right: 1px solid;
     }
+
     section .point-content {
         padding-left: 45px;
         flex-grow: 1;
     }
+
     section .point-content .point-title {
         position: relative;
         padding: 45px 0;
         padding-right: 70px;
     }
+
     section .point-content ul {
         margin-left: 18px;
         padding-bottom: 45px;
         display: none;
     }
+
     section .point-content li {
         margin-bottom: 15px;
     }
+
     section .point-toggle {
         position: absolute;
         top: 0;
@@ -241,6 +224,7 @@
         left: 0;
         cursor: pointer;
     }
+
     section .point-toggle .icon {
         position: absolute;
         top: 50%;
@@ -248,32 +232,32 @@
         padding: 30px;
         margin: -30px;
     }
+
     section .point-toggle .line1,
     section .point-toggle .line2 {
         background: #fff;
         position: absolute;
         transform: translate(-50%, -50%);
     }
+
     section .point-toggle .line1 {
         width: 24px;
         height: 1px;
     }
+
     section .point-toggle .line2 {
         width: 1px;
         height: 24px;
     }
 
-    section .point.is-active {
-    }
+    section .point.is-active {}
+
     section .point.is-active .point-content ul {
         display: block;
     }
+
     section .point.is-active .point-toggle .line2 {
         display: none;
-    }
-
-    #third .section-body {
-        display: block;
     }
 
     #first .section-body,
@@ -287,12 +271,13 @@
         border-right: 1px solid #ffffff;
     }
 
-    section .section-body-copy p:first-child {
+    section .section-body-copy p {
         position: relative;
-        text-indent: 75px;
+        padding-left: 20px;
+        padding-bottom: 2vh;
     }
 
-    section .section-body-copy p:first-child:before {
+    section .section-body-copy p:before {
         background-color: #ffffff;
         border-radius: 8px;
         content: '';
@@ -371,7 +356,7 @@
         margin: -1%;
     }
 
-    .home .top > div:first-child {
+    .home .top>div:first-child {
         border-right: 1px solid #ffffff;
     }
 
@@ -388,6 +373,7 @@
         margin-bottom: 0;
         margin-right: 100px;
     }
+
     .home .details p:nth-child(2) {
         margin-right: 0;
         padding: 0;
@@ -400,43 +386,13 @@
     section .email,
     section .links {
         height: 120px;
-    }
-
-    section .email {
-        padding-left: 0;
-    }
-
-    section .links {
-        border-bottom: none;
+        /* background-color: aqua; */
     }
 
     section .links a,
     section .email a {
         line-height: 120px;
         position: relative;
-    }
-
-    section .email a {
-        padding-left: 28px;
-        flex-grow: 1;
-    }
-
-    section .email a:after,
-    section .links a:after {
-        border-radius: 100px;
-        content: '';
-        position: absolute;
-        right: 53px;
-        top: 50%;
-        padding: 12px;
-        margin: -12px;
-        border: 1px solid #fff;
-        opacity: 0;
-    }
-
-    section .email a:hover:after,
-    section .links a:hover:after {
-        opacity: 1;
     }
 
     section .point-header {
@@ -452,62 +408,40 @@
     }
 
     #fifth .introduction p {
-        width: 130px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     section .email,
     section .links {
-        align-items: center;
         display: flex;
+        align-items: center;
+        justify-content: center;
         height: 120px;
     }
 
     section .email {
         border-top: 1px solid #ffffff;
         border-bottom: 1px solid #ffffff;
-        padding-left: 0;
-    }
-
-    section .links {
-        border-bottom: none;
     }
 
     section .links a,
     section .email a {
         line-height: 120px;
-        position: relative;
-        padding-left: 55px;
-    }
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    section .links a {
-        display: block;
-        flex: 1;
-        height: 100%;
     }
 
     section .links a:first-child {
         border-right: 1px solid #ffffff;
     }
 
-    section .email a {
-        flex-grow: 1;
+    section .links a {
+        width: 50%;
     }
 
-    section .email a:after,
-    section .links a:after {
-        border-radius: 100px;
-        content: '';
-        position: absolute;
-        right: 53px;
-        top: 50%;
-        padding: 12px;
-        margin: -12px;
-        border: 1px solid #fff;
-        opacity: 0;
-    }
-
-    section .email a:hover:after,
-    section .links a:hover:after {
-        opacity: 1;
-    }
 }

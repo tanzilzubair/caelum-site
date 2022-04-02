@@ -23,7 +23,6 @@ function ready() {
     addNavigationHandlers();
     addResizeHandlers();
     addAccordionHandlers();
-    storeLanguageSelection();
 
     go(0);
 }
@@ -106,14 +105,7 @@ function addAccordionHandlers() {
     });
 }
 
-function storeLanguageSelection() {
-    const langPrompts = document.querySelectorAll('.language-toggle a');
-    langPrompts.forEach((prompt) => {
-        prompt.addEventListener('click', (e) => {
-            localStorage.setItem('language', prompt.dataset.lang);
-        });
-    });
-}
+
 
 function go(index) {
     closeMenu();

@@ -16,6 +16,15 @@
     font-stretch: normal;
 }
 
+@font-face {
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oldstandardtt/v17/MwQrbh3o1vLImiwAVvYawgcf2eVWEX-tRlZfTc4PlJz5.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
 body {
     font-size: 14px;
     font-family: 'GT Cinetype';
@@ -37,8 +46,10 @@ nav button {
     font-size: 16px;
 }
 
-.language-toggle {
+.home-button {
     font-size: 12px;
+    font-family: 'Old Standard TT';
+    font-size: clamp(50px, 10vw, 57px);
 }
 
 .introduction p {
@@ -47,7 +58,6 @@ nav button {
 }
 
 .point,
-.email,
 .links {
     font-size: 16px;
 }
@@ -68,13 +78,14 @@ nav button {
     .section-header {
         font-size: 14px;
     }
+
     .section-header .number {
         font-weight: bold;
     }
 
-    #third .introduction p,
     #fifth .introduction p {
-        font-size: 28px;
+        font-size: 35px;
+        font-weight: 600;
     }
 
     .point-header {

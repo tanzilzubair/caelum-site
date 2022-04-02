@@ -15,7 +15,7 @@
         z-index: 2;
     }
 
-    .language-toggle {
+    .home-button {
         display: none;
     }
 
@@ -90,11 +90,9 @@
         margin-right: 5px;
     }
 
-    section:not(.home) .animation {
-    }
+    section:not(.home) .animation {}
 
-    #fifth .animation {
-    }
+    #fifth .animation {}
 
     section:not(.home) .animation svg {
         display: block;
@@ -127,11 +125,11 @@
         min-height: 350px;
     }
 
-    .home .top > div {
+    .home .top>div {
         flex: 1;
     }
 
-    .home .top > div:first-child {
+    .home .top>div:first-child {
         border-right: 1px solid #ffffff;
     }
 
@@ -190,15 +188,6 @@
         flex: 1;
     }
 
-    section .static-image-container {
-        border-right: 1px solid #ffffff;
-        padding: 160px 20px 0;
-    }
-
-    section .static-image-container svg {
-        width: 50px;
-    }
-
     section .section-body-copy {
         padding: 50px 40px;
     }
@@ -248,6 +237,7 @@
         display: flex;
         border-top: 1px solid #fff;
     }
+
     section .point-number {
         width: 25%;
         padding: 45px 0;
@@ -255,23 +245,28 @@
         flex-shrink: 0;
         border-right: 1px solid;
     }
+
     section .point-content {
         padding-left: 45px;
         flex-grow: 1;
     }
+
     section .point-content .point-title {
         position: relative;
         padding: 45px 0;
         padding-right: 70px;
     }
+
     section .point-content ul {
         margin-left: 18px;
         padding-bottom: 45px;
         display: none;
     }
+
     section .point-content li {
         margin-bottom: 15px;
     }
+
     section .point-toggle {
         position: absolute;
         top: 0;
@@ -280,6 +275,7 @@
         left: 0;
         cursor: pointer;
     }
+
     section .point-toggle .icon {
         position: absolute;
         top: 50%;
@@ -287,35 +283,32 @@
         padding: 30px;
         margin: -30px;
     }
+
     section .point-toggle .line1,
     section .point-toggle .line2 {
         background: #fff;
         position: absolute;
         transform: translate(-50%, -50%);
     }
+
     section .point-toggle .line1 {
         width: 24px;
         height: 1px;
     }
+
     section .point-toggle .line2 {
         width: 1px;
         height: 24px;
     }
 
-    section .point.is-active {
-    }
+    section .point.is-active {}
+
     section .point.is-active .point-content ul {
         display: block;
     }
+
     section .point.is-active .point-toggle .line2 {
         display: none;
-    }
-
-    #third .introduction {
-        border: 0;
-    }
-    #third .section-body {
-        display: block;
     }
 
     footer {
