@@ -192,12 +192,13 @@
         padding: 50px 40px;
     }
 
-    section .section-body-copy p:first-child {
+    section .section-body-copy p {
         position: relative;
-        text-indent: 55px;
+        padding-left: 20px;
+        padding-bottom: 2vh;
     }
 
-    section .section-body-copy p:first-child:before {
+    section .section-body-copy p:before {
         background-color: #ffffff;
         border-radius: 8px;
         content: '';
@@ -207,29 +208,40 @@
         top: 7px;
         width: 8px;
     }
+    
+    #fifth .introduction p {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     section .email,
     section .links {
-        align-items: center;
         display: flex;
+        align-items: center;
+        justify-content: center;
         height: 80px;
     }
 
     section .email {
         border-bottom: 1px solid #ffffff;
-        padding-left: 28px;
     }
 
-    section .links a {
-        display: block;
-        flex: 1;
-        height: 100%;
+    section .links a,
+    section .email a {
         line-height: 80px;
-        padding-left: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     section .links a:first-child {
         border-right: 1px solid #ffffff;
+    }
+
+    section .links a {
+        width: 50%;
     }
 
     section .point {
