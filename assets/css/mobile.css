@@ -79,6 +79,7 @@
     .logo {
         height: 24px;
         width: 24px;
+        position: relative; 
     }
 
     .logo img {
@@ -407,5 +408,47 @@
 
     .hamburger--slider.is-active .hamburger-inner::after {
         transform: translate3d(0, -7px, 0) rotate(-90deg);
+    }
+    .privacy, .terms {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        padding-top: clamp(50px, 6.5%, 60px);
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: clamp(60px, 6.5%, 70px);
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .privacy div, .terms div {
+        width: clamp(30ch, 100%, 50ch);
+    }
+    .info-title {
+        font-size:40px;
+        font-weight: 900;
+        margin-bottom: 40px;
+        white-space: nowrap;
+       
+    }
+    .info-subtitle {
+        font-size:clamp(22.5px, 24px, 27.5px);
+        font-weight: 900;
+        margin-top: 35px;
+        margin-bottom: 10px;
+        line-height: 140%;
+    }
+
+    .info-content {
+        width: clamp(30ch, 100%, 50ch);
+    }
+    .info-content a {
+        text-decoration: underline;
+    }
+    .terms-list li{
+        margin-top: 11px;
+        margin-bottom: 11px;
+        width: clamp(25ch, 100%, 45ch);
     }
 }

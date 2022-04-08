@@ -16,6 +16,7 @@
         height: 33px;
         width: 33px;
         margin: auto;
+        position: relative; 
     }
 
     .logo img {
@@ -443,5 +444,42 @@
     section .links a {
         width: 50%;
     }
-
+    .privacy, .terms {
+        position: absolute;
+        top: 0;
+        left: 80px;
+        height: 100%;
+        width: calc(100% - 80px);
+        padding-top: 6.5%;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 6.5%;
+        overflow-x: hidden;
+        overflow-y:auto;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .info-title {
+        font-size: 45px;
+        font-weight: 900;
+        margin-bottom: 40px;
+    }
+    .info-subtitle {
+        font-size: 27.5px;
+        font-weight: 900;
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+    .info-content {
+        width: 50ch;
+    }
+    .info-content a {
+        text-decoration: underline;
+    }
+    .terms-list li{
+        margin-top: 11px;
+        margin-bottom: 11px;
+        width: 45ch;
+    }
 }

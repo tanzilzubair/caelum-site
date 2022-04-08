@@ -18,7 +18,6 @@ ready();
 function ready() {
     initElements();
     initAnimations();
-
     addMobileMenuHandlers();
     addNavigationHandlers();
     addResizeHandlers();
