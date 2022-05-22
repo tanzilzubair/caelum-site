@@ -7,27 +7,19 @@
     <meta name="viewport"
         content="width=device-width, minimal-ui, viewport-fit=cover, initial-scale=1.0, minimum-scale=1.0" />
 
-    <!-- Primary Meta Tags -->
+    <!-- Meta Tags -->
     <title>Caelum</title>
     <meta name="title" content="Caelum" />
     <meta name="description"
-        content="G!theimagineers is a hybrid creative, agile, daring, sassy production studio that embraces architecture, scenography, light, image, sound and all the techniques of the performing arts." />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.gtheimagineers.com/" />
-    <meta property="og:title" content="G!theimagineers" />
-    <meta property="og:description"
-        content="G!theimagineers is a hybrid creative, agile, daring, sassy production studio that embraces architecture, scenography, light, image, sound and all the techniques of the performing arts." />
-    <meta property="og:image" content="https://www.gtheimagineers.com/assets/images/share/share.png" />
+        content="Caelum is a weather app. But it’s also so much more. In a market that looks like its actively trying to make more confusing, gimmicky and adware filled apps, Caelum does something different.
+We focus on simplicity, choose speed, and intertwine beauty and functionality into every last button; and we can’t wait for you to experience every last one of them." />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.gtheimagineers.com/" />
-    <meta property="twitter:title" content="G!theimagineers" />
-    <meta property="twitter:description"
-        content="G!theimagineers is a hybrid creative, agile, daring, sassy production studio that embraces architecture, scenography, light, image, sound and all the techniques of the performing arts." />
-    <meta property="twitter:image" content="https://www.gtheimagineers.com/assets/images/share/share.png" />
+    <meta property="twitter:url" content="https://caelum.tanzilzubair.tech/" />
+    <meta property="twitter:title" content="Caelum" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:image" content="" />
 
     <!-- Favicons / Theme -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
@@ -45,69 +37,139 @@
     <link href="assets/css/typography.css" rel="stylesheet" />
     <link href="assets/css/mobile.css" rel="stylesheet" />
     <link href="assets/css/desktop.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Marquee';
+            src: url('assets/fonts/Marquee.otf') format("opentype");
+            font-weight: 900;
+            font-style: normal;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Vertical Header-->
     <header class="main-header">
         <div class="logo"><img src="assets/images/logo.svg" alt="Caelum logo" /></div>
         <button class="home-prompt"></button>
+        <!-- Mobile Menu-->
         <button class="hamburger hamburger--slider" type="button" aria-label="Menu" aria-controls="navigation">
             <label>Menu</label>
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
         </button>
+        <div class="home-button">
+            <a href="https://tanzilzubair.tech">T</a>
+        </div>
     </header>
 
+    <!-- Rest of site -->
     <main>
+        <!-- Home Section -->
         <section class="home active">
             <div class="container">
-                <div class="top">
-                    <div class="animation left">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="white">
-                            <path d="M 2 50
-                                     A 48 48 0 0 0 98 50
-                                     A 48 48 0 0 0 2 50" />
-                        </svg>
-                    </div>
-                    <div class="animation right">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="white">
-                            <path d="M 2 50
-                                    A 48 48 0 0 0 98 50
-                                    A 48 48 0 0 0 2 50" />
-                        </svg>
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="white">
-                            <path d="M 2 50
-                                    A 48 48 0 0 0 98 50
-                                    A 48 48 0 0 0 2 50" />
-                        </svg>
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="white">
-                            <path d="M 2 50
-                                    A 48 48 0 0 0 98 50
-                                    A 48 48 0 0 0 2 50" />
-                        </svg>
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="white">
-                            <path d="M 2 50
-                                    A 48 48 0 0 0 98 50
-                                    A 48 48 0 0 0 2 50" />
-                        </svg>
-                    </div>
+                <div class="marquee">
+                    <ul class="letters">
+                        <!-- This first empty list item is needed to smoothen the loop-->
+                        <li></li>
+                        <li>POWERFUL</li>
+                        <li class='separator'>/</li>
+                        <li>FAST</li>
+                        <li class='separator'>/</li>
+                        <li>ACCURATE</li>
+                        <li class='separator'>/</li>
+                        <li>BEAUTIFUL</li>
+                        <li class='separator'>/</li>
+                        <li>PRIVACY AWARE</li>
+                        <li class='separator'>/</li>
+                        <li>DELIGHTFUL</li>
+                        <li class='separator'>/</li>
+                        <li>SECURE</li>
+                        <li class='separator'>/</li>
+                    </ul>
                 </div>
-                <div class="details">
-                    <p>
-                        | Crazy Accurate \ And Getting Better<br />
-                        | Privacy Conscious \ By Design<br />
-                        | Beautifully Made \ With Love
-                    </p>
-                    <p>
-                        Contact me!<br />
-                        <a target="_blank" href="mailto:contact@tanzilzubair.tech"
-                            data-hover="Contact Me!">contact@tanzilzubair.tech</a><br />
-                        &copy; 2022 Tanzil Zubair Bin Zaman
-                    </p>
+                <div class="home-grid">
+
+                    <div class="text-ring">
+                        <div id="circle" class="circle"><span style="--char-index: 0;" class="char">F</span><span
+                                style="--char-index: 1;" class="char">A</span><span style="--char-index: 2;"
+                                class="char">S</span><span style="--char-index: 3;" class="char">T</span><span
+                                style="--char-index: 4;" class="char">·</span><span style="--char-index: 5;"
+                                class="char">A</span><span style="--char-index: 6;" class="char">W</span><span
+                                style="--char-index: 7;" class="char">E</span><span style="--char-index: 8;"
+                                class="char">S</span><span style="--char-index: 9;" class="char">O</span><span
+                                style="--char-index: 10;" class="char">M</span><span style="--char-index: 11;"
+                                class="char">E</span><span style="--char-index: 12;" class="char">·</span><span
+                                style="--char-index: 13;" class="char">I</span><span style="--char-index: 14;"
+                                class="char">N</span><span style="--char-index: 15;" class="char">T</span><span
+                                style="--char-index: 16;" class="char">U</span><span style="--char-index: 17;"
+                                class="char">I</span><span style="--char-index: 18;" class="char">T</span><span
+                                style="--char-index: 19;" class="char">I</span><span style="--char-index: 20;"
+                                class="char">V</span><span style="--char-index: 21;" class="char">E</span><span
+                                style="--char-index: 22;" class="char">·</span><span style="--char-index: 23;"
+                                class="char">N</span><span style="--char-index: 24;" class="char">I</span><span
+                                style="--char-index: 25;" class="char">M</span><span style="--char-index: 26;"
+                                class="char">B</span><span style="--char-index: 27;" class="char">L</span><span
+                                style="--char-index: 28;" class="char">E</span><span style="--char-index: 29;"
+                                class="char">·</span>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="title">
+                        <h1 class="heading">CAELUM</h1>
+                        <h3 class="sub-heading-1">/ˈkae̯.lum/</h3>
+                        <h3 class="sub-heading-2">noun</h3>
+                        <h3 class="sub-heading-3">sky; climate or weather</h3>
+                    </div>
+                    <div class="blurb">
+                        <p>
+                            Caelum is a weather app. But it’s also so much more. In a market that looks like its
+                            actively trying to make more confusing, gimmicky and adware filled apps, Caelum does
+                            something different. <br> <br>
+
+                            We focus on simplicity, choose speed, and intertwine beauty and functionality into every
+                            last button; and we can’t wait for you to experience every last one of them.
+                        </p>
+                    </div>
+                    <div class="download-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#ffffff"
+                            viewBox="0 0 256 256">
+                            <rect width="256" height="256" fill="none"></rect>
+                            <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="#ffffff" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="16"></line>
+                            <polyline points="56 144 128 216 200 144" fill="none" stroke="#ffffff"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                        </svg>
+                    </div>
+                    <div class="download-text">
+                        <p>
+                            DOWNLOAD-ENJOY-
+                        </p>
+                        <script>
+                            const text = document.querySelector('.download-text p');
+                            text.innerHTML = text.innerText.split("").map(
+                                (char, i) =>
+                                    `<span style="transform:rotate(${i * 24}deg)">${char}</span>`
+                            ).join("")
+                        </script>
+                    </div>
+                    <div class="copyright-text">
+                        <p>© 2022 Tanzil Zubair Bin Zaman</p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Features Section -->
         <section id="first">
             <header class="section-header">
                 <span class="number">I</span>
@@ -159,6 +221,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Vision Section -->
         <section id="second">
             <header class="section-header">
                 <span class="number">II</span>
@@ -201,6 +265,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Engineering Section -->
         <section id="third">
             <header class="section-header">
                 <span class="number">III</span>
@@ -226,6 +292,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- What's Next Section -->
         <section id="fourth">
             <header class="section-header">
                 <span class="number">IV</span>
@@ -265,6 +333,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Contact Section -->
         <section id="fifth">
             <header class="section-header">
                 <span class="number">V</span>
@@ -292,6 +362,7 @@
         </section>
     </main>
 
+    <!-- Mobile Menu (Open State) -->
     <nav>
         <button><span class="number">I</span><span class="title">Manifesto</span></button>
         <button>
@@ -303,27 +374,10 @@
         </button>
         <button><span class="number">V</span><span class="title">Contact</span></button>
     </nav>
-
-    <div class="home-button">
-        <a href="https://tanzilzubair.tech">T</a>
-    </div>
-    <!-- This footer is only visible on mobile devices-->
-    <footer>
-        <p>
-            | Crazy Accurate \ And Getting Better<br />
-            | Privacy Conscious \ By Design<br />
-            | Beautifully Made \ With Love
-        </p>
-        <p>
-            Contact me!<br />
-            <a target="_blank" href="mailto:contact@tanzilzubair.tech"
-                data-hover="Contact Me!">contact@tanzilzubair.tech</a><br />
-            &copy; 2022 Tanzil Zubair Bin Zaman
-        </p>
-    </footer>
-
-    <script data-cfasync="false" src="assets/js/email-decode.min.js"></script>
-    <script type="module" src="assets/js/Main.js"></script>
 </body>
+<script type="module" src="assets/js/Main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
 
 </html>

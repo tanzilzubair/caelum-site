@@ -91,10 +91,6 @@
         margin-right: 5px;
     }
 
-    section:not(.home) .animation {}
-
-    #fifth .animation {}
-
     section:not(.home) .animation svg {
         display: block;
         padding: 40px 0 60px;
@@ -119,25 +115,6 @@
         flex-direction: column;
     }
 
-    .home .top {
-        align-items: stretch;
-        display: flex;
-        flex: 1;
-        min-height: 350px;
-    }
-
-    .home .top>div {
-        flex: 1;
-    }
-
-    .home .top>div:first-child {
-        border-right: 1px solid #ffffff;
-    }
-
-    .home .details {
-        display: none;
-    }
-
     .home .animation {
         align-items: center;
         align-content: center;
@@ -152,15 +129,6 @@
     .home .animation svg path {
         transform-origin: center;
         opacity: 0;
-    }
-
-    .home .animation.left svg {
-        flex: 1;
-    }
-
-    .home .animation.right svg {
-        flex: 0 50%;
-        margin: -1px;
     }
 
     section .animation {
