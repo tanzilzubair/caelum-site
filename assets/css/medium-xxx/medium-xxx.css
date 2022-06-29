@@ -224,55 +224,30 @@ header {
 }
 /* ------------------------------------------------------------------------- */
 /* The iOS and Android download buttons */
-.ios-download {
-    height: 70px;
+.download-buttons-container{
+    height: 65px;
+    width: 100%;
     position: absolute;
     top: 850px;
-    left: 17.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ios-download {
+    height: 100%;
+    padding-right: 2.5vw;
 }
 .ios-download a img {
     object-fit: contain;
     height: 100%;
-    width: 100%;
 }
 .android-download {
-    height: 70px;
-    position: absolute;
-    top: 850px;
-    right: 17.5%;
+    height: 100%;
+    padding-left: 2.5vw;
 }
 .android-download a img {
     object-fit: contain;
     height: 100%;
-    width: 100%;
-}
-@media (min-width: 900px) and (max-width: 950px){
-    .ios-download {
-        height: 70px;
-        position: absolute;
-        top: 850px;
-        left: 20%;
-    } 
-    .android-download {
-        height: 70px;
-        position: absolute;
-        top: 850px;
-        right: 20%;
-    }
-}
-@media (min-width: 950px) and (max-width: 1000px){
-    .ios-download {
-        height: 70px;
-        position: absolute;
-        top: 850px;
-        left: 22.5%;
-    } 
-    .android-download {
-        height: 70px;
-        position: absolute;
-        top: 850px;
-        right: 22.5%;
-    }
 }
 /* ------------------------------------------------------------------------- */
 /* The app icon and its text */
@@ -280,6 +255,7 @@ header {
     position: absolute;
     top: 425px;
     right: 10vw;
+    width: 27.5vw;
 }
 .app-icon {
     height: 125px;
@@ -297,6 +273,7 @@ header {
 }
 .app-icon-text p{
     color: white;
+    white-space: nowrap;
     text-align: center;
     font-size: 14px;
 }
@@ -304,7 +281,7 @@ header {
 /* The copyright text */
 .copyright-text {
     position: absolute;
-    top: 1000px;
+    top: 975px;
     right: 0px;
     width: 100vw;
     display: flex;

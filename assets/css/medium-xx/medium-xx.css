@@ -271,55 +271,30 @@ header {
 }
 /* ------------------------------------------------------------------------- */
 /* The iOS and Android download buttons */
-.ios-download {
-    height: 60px;
+.download-buttons-container{
+    height: 65px;
+    width: 100%;
     position: absolute;
-    top: 1060px;
-    left: 15%;
+    top: 1075px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ios-download {
+    height: 100%;
+    padding-right: 2.5vw;
 }
 .ios-download a img {
     object-fit: contain;
     height: 100%;
-    width: 100%;
 }
 .android-download {
-    height: 60px;
-    position: absolute;
-    top: 1060px;
-    right: 15%;
+    height: 100%;
+    padding-left: 2.5vw;
 }
 .android-download a img {
     object-fit: contain;
     height: 100%;
-    width: 100%;
-}
-@media (min-width:690px) and (max-width: 750px){
-    .ios-download {
-        height: 60px;
-        position: absolute;
-        top: 1060px;
-        left: 18%;
-   }
-    .android-download {
-        height: 60px;
-        position: absolute;
-        top: 1060px;
-        right: 18%;
-   }
-}
-@media (min-width:750px) and (max-width: 800px){
-    .ios-download {
-        height: 60px;
-        position: absolute;
-        top: 1060px;
-        left: 20%;
-   }
-    .android-download {
-        height: 60px;
-        position: absolute;
-        top: 1060px;
-        right: 20%;
-   }
 }
 /* ------------------------------------------------------------------------- */
 /* The app icon and its text */
@@ -327,6 +302,7 @@ header {
     position: absolute;
     top: 175px;
     right: 10vw;
+    width: 35vw;
 }
 .app-icon {
     height: 115px;
@@ -346,6 +322,7 @@ header {
     color: white;
     text-align: center;
     font-size: 14px;
+    white-space: nowrap;
 }
 @media (min-width:700px) and (max-width: 800px){
     .app-icon-container {

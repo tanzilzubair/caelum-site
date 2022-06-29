@@ -317,7 +317,6 @@ main {
 .ios-download a img {
     object-fit: contain;
     height: 100%;
-    width: 100%;
 }
 .android-download {
     height: 100%;
@@ -326,7 +325,6 @@ main {
 .android-download a img {
     object-fit: contain;
     height: 100%;
-    width: 100%;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -335,6 +333,7 @@ main {
     position: absolute;
     top: 275px;
     left: calc(var(--vertical-column-width) + 3.5vw);
+    width: 20vw;
 }
 .app-icon {
     height: 105px;
@@ -348,6 +347,7 @@ main {
     height: 80px;
     width: auto;
     display: flex;
+    white-space: nowrap;
     justify-content: center;
     align-items:center;
 }
@@ -355,6 +355,7 @@ main {
     color: white;
     text-align: center;
     font-size: 13px;
+    white-space: nowrap;
 }
 @media (min-width: 975px) and (max-width: 1050px){
     .app-icon-container {
