@@ -32,11 +32,54 @@ We focus on simplicity, choose speed, and intertwine beauty and functionality in
     <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- Styles -->
     <link href="assets/css/global.css" rel="stylesheet" />
-    <link href="assets/css/typography.css" rel="stylesheet" />
-    <link href="assets/css/mobile.css" rel="stylesheet" />
-    <link href="assets/css/desktop.css" rel="stylesheet" />
+
+    <!-- Common Styles For All Screens-->
+    <link rel="stylesheet" href="assets/css/common-components.css" />
+    <link rel="stylesheet" href="assets/css/common-typography.css" />
+
+    <!-- Styles For Small Screens-->
+    <link rel="stylesheet" media='(max-width: 450px)' href="assets/css/small/small.css" />
+    <link rel="stylesheet" media='(max-width: 450px)' href="assets/css/small/small-typography.css" />
+
+    <!-- Styles For Medium-x Screens-->
+    <link rel="stylesheet" media='(min-width: 451px) and (max-width: 650px)' href="assets/css/medium-x/medium-x.css" />
+    <link rel="stylesheet" media='(min-width: 451px) and (max-width: 650px)'
+        href="assets/css/medium-x/medium-typography-x.css" />
+
+    <!-- Styles For Medium-xx Screens-->
+    <link rel="stylesheet" media='(min-width: 651px) and (max-width: 800px)'
+        href="assets/css/medium-xx/medium-xx.css" />
+    <link rel="stylesheet" media='(min-width: 651px) and (max-width: 800px)'
+        href="assets/css/medium-xx/medium-typography-xx.css" />
+
+    <!-- Styles For Medium-xxx Screens-->
+    <link rel="stylesheet" media='(min-width: 801px) and (max-width: 950px)'
+        href="assets/css/medium-xxx/medium-xxx.css" />
+    <link rel="stylesheet" media='(min-width: 801px) and (max-width: 950px)'
+        href="assets/css/medium-xxx/medium-typography-xxx.css" />
+
+
+    <!-- Styles For Large-x Screens-->
+    <link rel="stylesheet" media='(min-width: 951px) and (max-width: 1100px)' href="assets/css/large-x/large-x.css" />
+    <link rel="stylesheet" media='(min-width: 951px) and (max-width: 1100px)'
+        href="assets/css/large-x/large-typography-x.css" />
+
+    <!-- Styles For Large-xx Screens-->
+    <link rel="stylesheet" media='(min-width: 1101px) and (max-width: 1300px)'
+        href="assets/css/large-xx/large-xx.css" />
+    <link rel="stylesheet" media='(min-width: 1101px) and (max-width: 1300px)'
+        href="assets/css/large-xx/large-typography-xx.css" />
+
+    <!-- Styles For Large-xxx Screens-->
+    <link rel="stylesheet" media='(min-width: 1301px) and (max-width: 1400px)'
+        href="assets/css/large-xxx/large-xxx.css" />
+    <link rel="stylesheet" media='(min-width: 1301px) and (max-width: 1400px)'
+        href="assets/css/large-xxx/large-typography-xxx.css" />
+
+    <!-- Styles For Large-xxxx Screens-->
+    <link rel="stylesheet" media='(min-width: 1401px)' href="assets/css/large-xxxx/large-xxxx.css" />
+    <link rel="stylesheet" media='(min-width: 1401px)' href="assets/css/large-xxxx/large-typography-xxxx.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -125,10 +168,12 @@ We focus on simplicity, choose speed, and intertwine beauty and functionality in
                     </div>
                     <!-- -->
                     <div class="title">
-                        <h1 class="heading">CAELUM</h1>
-                        <h3 class="sub-heading-1">/ˈkae̯.lum/</h3>
-                        <h3 class="sub-heading-2">noun</h3>
-                        <h3 class="sub-heading-3">sky; climate or weather</h3>
+                        <div class="title-group">
+                            <h1 class="heading">CAELUM</h1>
+                            <h3 class="sub-heading-1">/ˈkae̯.lum/</h3>
+                            <h3 class="sub-heading-2">noun</h3>
+                            <h3 class="sub-heading-3">sky; climate or weather</h3>
+                        </div>
                     </div>
                     <div class="blurb">
                         <p>
@@ -140,45 +185,51 @@ We focus on simplicity, choose speed, and intertwine beauty and functionality in
                             last button; and we can’t wait for you to experience every last one of them.
                         </p>
                     </div>
-                    <div class="app-icon">
-                        <img src="assets/images/Caelum.png" alt='App Icon'>
+                    <div class="app-icon-container">
+                        <div class="app-icon">
+                            <img src="assets/images/Caelum.png" alt='App Icon'>
+                        </div>
+                        <div class="app-icon-text">
+                            <p><em>Our app icon! <br>
+                                    We hope you like it as much as we do!</em></p>
+                        </div>
                     </div>
-                    <div class="app-icon-text">
-                        <p><em>Our app icon! <br>
-                                We hope you like it as much as we do!</em></p>
+                    <div class="download-ring">
+                        <div class="download-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#ffffff"
+                                viewBox="0 0 256 256">
+                                <rect width="256" height="256" fill="none"></rect>
+                                <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="#ffffff"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                <polyline points="56 144 128 216 200 144" fill="none" stroke="#ffffff"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                            </svg>
+                        </div>
+                        <div class="download-text">
+                            <p>
+                                DOWNLOAD-ENJOY-
+                            </p>
+                            <script>
+                                const text = document.querySelector('.download-text p');
+                                text.innerHTML = text.innerText.split("").map(
+                                    (char, i) =>
+                                        `<span style="transform:rotate(${i * 24}deg)">${char}</span>`
+                                ).join("")
+                            </script>
+                        </div>
                     </div>
-                    <div class="download-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#ffffff"
-                            viewBox="0 0 256 256">
-                            <rect width="256" height="256" fill="none"></rect>
-                            <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="#ffffff" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="16"></line>
-                            <polyline points="56 144 128 216 200 144" fill="none" stroke="#ffffff"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
-                        </svg>
-                    </div>
-                    <div class="download-text">
-                        <p>
-                            DOWNLOAD-ENJOY-
-                        </p>
-                        <script>
-                            const text = document.querySelector('.download-text p');
-                            text.innerHTML = text.innerText.split("").map(
-                                (char, i) =>
-                                    `<span style="transform:rotate(${i * 24}deg)">${char}</span>`
-                            ).join("")
-                        </script>
-                    </div>
-                    <div class="ios-download">
-                        <a href='' target="_blank">
-                            <img src="assets/images/App Store.png" alt='Get it on the App Store'>
-                        </a>
-                    </div>
-                    <div class="android-download">
-                        <a href='https://play.google.com/store/apps/details?id=tanzilzubairbinzaman.caelum'
-                            target="_blank">
-                            <img src="assets/images/Play Store.png" alt='Get it on Google Play'>
-                        </a>
+                    <div class="download-buttons-container">
+                        <div class="ios-download">
+                            <a href='' target="_blank">
+                                <img src="assets/images/App Store.png" alt='Get it on the App Store'>
+                            </a>
+                        </div>
+                        <div class="android-download">
+                            <a href='https://play.google.com/store/apps/details?id=tanzilzubairbinzaman.caelum'
+                                target="_blank">
+                                <img src="assets/images/Play Store.png" alt='Get it on Google Play'>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="copyright-text">
@@ -192,7 +243,7 @@ We focus on simplicity, choose speed, and intertwine beauty and functionality in
         <section id="first">
             <header class="section-header">
                 <span class="number">I</span>
-                <span class="title">Features</span>
+                <span class="title-header">Features</span>
             </header>
             <div class="container">
                 <div class="animation">
@@ -245,7 +296,7 @@ We focus on simplicity, choose speed, and intertwine beauty and functionality in
         <section id="second">
             <header class="section-header">
                 <span class="number">II</span>
-                <span class="title">Vision</span>
+                <span class="title-header">Vision</span>
             </header>
             <div class="container">
                 <div class="animation">
@@ -289,7 +340,7 @@ We focus on simplicity, choose speed, and intertwine beauty and functionality in
         <section id="third">
             <header class="section-header">
                 <span class="number">III</span>
-                <span class="title">Engineering</span>
+                <span class="title-header">Engineering</span>
             </header>
             <div class="container">
                 <div class="animation">
@@ -316,7 +367,7 @@ We focus on simplicity, choose speed, and intertwine beauty and functionality in
         <section id="fourth">
             <header class="section-header">
                 <span class="number">IV</span>
-                <span class="title">What's next</span>
+                <span class="title-header">What's next</span>
             </header>
             <div class="container">
                 <div class="animation">
@@ -357,7 +408,7 @@ We focus on simplicity, choose speed, and intertwine beauty and functionality in
         <section id="fifth">
             <header class="section-header">
                 <span class="number">V</span>
-                <span class="title">Contact</span>
+                <span class="title-header">Contact</span>
             </header>
             <div class="container">
                 <div class="animation">
@@ -383,15 +434,15 @@ We focus on simplicity, choose speed, and intertwine beauty and functionality in
 
     <!-- Mobile Menu (Open State) -->
     <nav>
-        <button><span class="number">I</span><span class="title">Manifesto</span></button>
+        <button><span class="number">I</span><span class="title-header">Manifesto</span></button>
         <button>
-            <span class="number">II</span><span class="title">Vision</span>
+            <span class="number">II</span><span class="title-header">Vision</span>
         </button>
-        <button><span class="number">III</span><span class="title">Engineering</span></button>
+        <button><span class="number">III</span><span class="title-header">Engineering</span></button>
         <button>
-            <span class="number">IV</span><span class="title">What's next</span>
+            <span class="number">IV</span><span class="title-header">What's next</span>
         </button>
-        <button><span class="number">V</span><span class="title">Contact</span></button>
+        <button><span class="number">V</span><span class="title-header">Contact</span></button>
     </nav>
 </body>
 <script type="module" src="assets/js/Main.js"></script>
