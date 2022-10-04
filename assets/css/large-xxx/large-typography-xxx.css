@@ -20,7 +20,6 @@ button {
 nav button {
     font-size: 16px;
 }
-
 .letters li {
     font-family: 'Marquee';
     font-size: 55px;
@@ -32,29 +31,25 @@ nav button {
     -webkit-text-stroke: 2.5px black;
     color: white;
     text-shadow:
-        3px 3px 0 #000000,
-        -1px -1px 0 #000000,
-        1px -1px 0 #000000,
-        -1px 1px 0 #000000,
-        1px 1px 0 #000000;
-
+    3px 3px 0 #000,
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
 }
-
 .letters li:hover {
     color: black;
     text-shadow: 0px 0px 0px white
 }
-
 .letters .separator {
-    padding-left: 30px;
+    padding-left: 30px; 
     padding-right: 30px;
     text-shadow: 0px 0px 0px white;
 }
-
 .letters .separator:hover {
-    color: #ffffff;
+    color: white;
 }
-
 .home-button {
     font-size: 12px;
     font-family: 'Times New Toman';
@@ -65,7 +60,6 @@ nav button {
     font-size: 20px;
     line-height: 30px;
 }
-
 .point,
 .links {
     font-size: 16px;
